@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-color: snow;
+}
+
+a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+#liste-envies {
+  margin: 20px;
+}
+
+#liste-envies h2 {
+  color: #C00;
+}
+
+.element h2 {
+  font-size: 1.2rem;
+}
+
+.price {
+  color: #C00;
+}
+
+#croissant, #decroissant {
+  cursor: pointer;
+}
+
+.envie {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #C00;
+  font-size: 0.9rem;
+}
+
+.btn {
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btnVider {
+  background-color: #C00;
+  color: #FFF;
+  display: none;
+}
+
+.btnCart {
+  background-color: dodgerblue;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+#shop .element {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  margin: 16px;
+  text-align: center;
+}
+
+#shop .btn {
+    display: block;
+    margin: 10px auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+  #shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #shop .element {
+    flex-basis: 48%;
+    margin: 1%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #shop .element {
+    flex-basis: 31%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
